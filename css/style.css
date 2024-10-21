@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+}
+body {
+    box-sizing: border-box;
+    padding: 20px 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+span {
+    font-size: 1.15rem;
+}
+.container {
+    width: 40%;
+}
+.custom-size {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+.input-container label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+input[type=number] {
+    border: 1px solid #a1a1a1;
+    border-radius: 4px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+input[type=number]::placeholder {
+    color: #a1a1a1;
+}
+input[type=file] {
+    display: none;
+}
+.photo-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+input#photo + label {
+    font-size: 1.1rem;
+    margin: 20px 0 10px 0;
+    width: fit-content;
+    background-color: #4d8cf2;
+    color: white;
+    padding: 5px 30px;
+    border: 2px solid #9ec3ff;
+    border-radius: 4px;
+}
+input#photo + label:hover {
+    background-color: #3b73ce;
+    cursor: pointer;
+    border-color: #729fe7;
+}
